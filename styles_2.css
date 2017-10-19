@@ -1,0 +1,155 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9fafc;
+}
+
+/* Nav Bar*/
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    padding-top: 1%;
+  }
+
+  li a {
+    text-decoration: none;
+    color: #69696a;
+  }
+
+  /* Hire Us Bar*/
+  .hire a {
+    background-color: #000;
+    color: #f9fafc;
+    border-radius: 30px;
+    padding: 10px 25px;
+    text-align: center;
+    width:100%
+  }
+
+  .hire {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Content */
+  .placeText{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .words {
+    color: #69696a;
+    border-left: 5px solid #69696a;
+    padding-left: 5%;
+    text-align: left;
+    width: 100%;
+  }
+
+  /* Scroll Bar*/
+  footer a {
+    background-color: #000;
+    color: #f9fafc;
+    border-radius: 30px;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* For Desktop Screens*/
+@media only screen and (min-width: 992px){
+  /* Horizontal navigation Bar */
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+  li {
+    padding-left: 5%;
+  }
+  .hire a {
+    width: auto;
+  }
+  .words {
+    width: 50%;
+  }
+
+  /* Circles */
+  #circlePink {
+    border-radius: 250px;
+    background-color: rgba(247, 136, 167, 0.6);
+    width:250px;
+    height: 250px;
+    position: absolute;
+    right: 0px;
+    top: 130px;
+    margin-right: 150px;
+    display: inline;
+  }
+
+  #circlePurple {
+    border-radius: 150px;
+    background-color: rgba(207, 130, 213, 0.6);
+    width:150px;
+    height: 150px;
+    position: absolute;
+    right: 0px;
+    top: 130px;
+    margin-right: 50px;
+    display: inline;
+  }
+
+  #circleYellow {
+    border-radius: 200px;
+    background-color: rgba(247, 193, 162, 0.6);
+    width:200px;
+    height: 200px;
+    position: absolute;
+    right: 0px;
+    top: 130px;
+    margin-right: 75px;
+    margin-top: 100px;
+    display: inline;
+  }
+
+  footer a {
+    background-color: #000;
+    color: #f9fafc;
+    border-radius: 30px;
+    padding: 10px 25px;
+    width: auto;
+    text-decoration: none;
+    margin-top: 130px;
+  }
+
+  footer {
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1%;
+  }
+}
